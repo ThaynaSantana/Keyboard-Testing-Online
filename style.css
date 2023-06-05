@@ -8,12 +8,58 @@ main {
     align-items: center;
     flex-direction: column;
     background-color: rgb(227, 227, 227);
-    width: 50em;
     height: 15em;
     padding: 20px;
     margin: 0 auto;
 }
 
 #keyboard{
-    
+    background-color: rgb(181, 181, 181);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+button{
+    font-size: 1em;
+    padding: 1.2em;
+    width: 2em;
+    height: 2em;
+    border: 2px solid gainsboro;
+    color: rgb(36, 36, 36);
+    margin: 0;
+}
+
+.funcoes{
+    font-size: 0.8em;
+
+}
+
+.numeros{
+
+}
+
+.letras{
+
+}
+
+.shortcut{
+    width: 4.2em;
+}
+
+#backspace{
+
+}
+
+#enter{
+
+}
+
+#rshift{
+
+}
+
+#space{
+    width: 10em;
 }
