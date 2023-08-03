@@ -6,13 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Typing...</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="teclado.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js" integrity="sha512-fHY2UiQlipUq0dEabSM4s+phmn+bcxSYzXP4vAXItBvBHU7zAM/mkhCZjtBEIJexhOMzZbgFlPLuErlJF2b+0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
+    <!-- Inicio da main onde é o display das teclas pressionadas -->
     <main>
         <h1>Comece a escrever...</h1>
+        <div class="display">
+            <h2 id="screen">_</h2>
+        </div>
+        <!-- Fim da main onde é o display das teclas -->
+        <!-- Inicio da div do teclado -->
         <div id="keyboard">
+            <!-- Inicio da classe letras -->
             <div class="funcoes">
-                <button>ESC</button>
+                <button class="shortcut">ESC</button>
                 <button>F1</button>
                 <button>F2</button>
                 <button>F3</button>
@@ -25,12 +34,14 @@
                 <button>F10</button>
                 <button>F11</button>
                 <button>F12</button>
-                <button>PRTSC</button>
-                <button>INS</button>
-                <button>DEL</button>
+                <button class="shortcut">PRTSC</button>
+                <button class="shortcut">INS</button>
+                <button class="shortcut">DEL</button>
             </div>
+            <!-- Fim da classe Funcoes -->
+            <!-- Inicio da classe letras -->
             <div class="numeros">
-                <button>"</button>
+                <button>'</button>
                 <button>1</button>
                 <button>2</button>
                 <button>3</button>
@@ -42,9 +53,11 @@
                 <button>9</button>
                 <button>0</button>
                 <button>-</button>
-                <button>+</button>
+                <button>=</button>
                 <button class="shortcut" id="backspace">BACK</button>
             </div>
+            <!-- Fim da classe numeros -->
+            <!-- Inicio da classe letras -->
             <div class="letras">
                 <button class="shortcut" id="tab">TAB</button>
                 <button>Q</button>
@@ -87,21 +100,27 @@
                 <button>,</button>
                 <button>.</button>
                 <button>;</button>
-                <button class="shortcut" id="rshift">RSHIFT</button>
                 <br>
                 <button class="shortcut">CTRL</button>
-                <button>FN</button>
-                <button>WIN</button>
-                <button>ALT</button>
-                <button id="space">SPACE</button>
-                <button>ALTGR</button>
+                <button class="shortcut">WIN</button>
+                <button class="shortcut">ALT</button>
+                <button id="space">___</button>
+                <button class="shortcut">ALTGR</button>
                 <button>/</button>
-                <button class="arrow" id="left">&larr;</button>
-                <button class="arrow" id="up">&uarr;</button>
-                <button class="arrow" id="down">&darr;</button>
-                <button class="arrow" id="right">&rarr;</button>
+                <div class="arrows">
+                    <button class="arrow" id="up">&uarr;</button>
+                    <div>
+                        <button class="arrow" id="left">&larr;</button>
+                        <button class="arrow" id="down">&darr;</button>
+                        <button class="arrow" id="right">&rarr;</button>
+                    </div>
+                </div>
+                <!-- Fim da classe letras -->
             </div>
-        </div>
     </main>
+    <footer>
+        ©Copyright - Desenvolvido por <b>Thayna Santana</b> <a target="_blank" href="https://www.linkedin.com/in/thayss/">Link aqui</a>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,5 +1,19 @@
+:root {
+    --bg-button-white: gainsboro;
+    --bg-button-black: #181818;
+    --white: gainsboro;
+    --white01: rgb(227, 227, 227);
+    --gray: rgb(181, 181, 181);
+    --green: rgb(72, 255, 0);
+}
+
 * {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+body {
+    background-color: black;
 }
 
 main {
@@ -7,23 +21,28 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(227, 227, 227);
-    height: 15em;
+    background-color: rgba(227, 227, 227, 0.336);
     padding: 20px;
-    margin: 0 auto;
+    color: var(--green);
 }
 
 #keyboard{
     background-color: rgb(181, 181, 181);
+    display: flex;
+    position: absolute;
+    top: 10rem;
     padding: 5px;
     display: flex;
+    min-height: 15rem;
+    min-width: 44rem;
     flex-direction: column;
     gap: 5px;
+    
 }
 
 button{
-    font-size: 1em;
-    padding: 1.2em;
+    font-size: 1.2em;
+    font-weight: bold;
     width: 2em;
     height: 2em;
     border: 2px solid gainsboro;
@@ -33,33 +52,41 @@ button{
 
 .funcoes{
     font-size: 0.8em;
-
 }
 
-.numeros{
-
-}
-
-.letras{
-
-}
 
 .shortcut{
     width: 4.2em;
 }
 
-#backspace{
-
-}
-
-#enter{
-
-}
-
-#rshift{
-
-}
 
 #space{
     width: 10em;
+}
+
+.arrows {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    position: absolute;
+    right: 0rem;
+    bottom: 0.8rem;
+}
+
+#up{
+    margin: 0 auto;
+}
+
+footer {
+    background-color: var(--green);
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+footer a {
+    font-weight: bolder;
+    color: rgb(0, 110, 255);
 }
